@@ -1,0 +1,309 @@
+body {
+  background-color: aqua;
+  color: black;
+
+}
+#gamediv {
+  width: 90%;
+  margin: auto;
+}
+
+#gamediv h1, #gamediv p  {
+  text-align: center;
+}
+
+.figure {
+  display: block;
+  height: 500px;
+  width: 250px;
+  fill: transparent;
+  stroke: black;
+  stroke-width: 10px;
+  stroke-linecap: round;
+  flex-shrink: 0;
+}
+
+.body {
+  display: none;
+}
+
+.content {
+  height: 24rem;
+  max-width: 50rem;
+  width: 100%;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.word {
+  font-size: 3rem;
+  height: 70%;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.letter {
+  text-align: center;
+  display: block;
+  height: 4rem;
+  width: 3rem;
+  margin-right: 3px;
+  border-bottom: 4px black solid;
+  padding-bottom: 5px;
+}
+
+.used {
+  height: 30%;
+  display: flex;
+  display: none;
+  padding-right: 5px;
+}
+
+.used.visible {
+  display: flex;
+}
+
+.used h2 {
+  display: inline-block;
+  font-size: 40px;
+}
+
+.used p {
+  display: inline-block;
+  font-size: 40px;
+  margin-top: 14px;
+  text-indent: 5px;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 10;
+  display: none;
+}
+
+.backdrop.visible {
+  display: block;
+}
+
+.final-msg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  max-width: 640px;
+  height: 320px;
+  padding: 2rem;
+  margin: auto;
+  background-color: black;
+  color: #fff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.final-msg.visible {
+  display: flex;
+}
+
+.final-msg p {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.final-msg .play {
+  font-size: 26px;
+  padding: 20px;
+  cursor: pointer;
+  margin-top: 50px;
+  background-color: #10416f;
+  color: #fff;
+}
+
+.letternotonce {
+  border: 2px #fff solid;
+  border-radius: 8px;
+  background-color: #e34754;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 640px;
+  margin: auto;
+  transform: translateY(100%);
+  transition: transform 200ms ease-in;
+}
+
+.letternotonce.visible {
+  transform: translateY(-520%);
+}
+
+.letternotonce p {
+  margin: 32px;
+  font-size: 30px;
+}
+
+.abtusyes {
+  font-size: 50px;
+}
+
+.abtush3 {
+  font-size: 80px;
+}
+
+#playbttn, #h2text{
+  font-size: 80px;
+  text-align: center;
+}
+
+#playbtncont, #h2cont {
+  float: none;
+  margin: 0 auto;
+  width: 1000px;
+  height: 100px;
+  padding: 10px;
+}
+
+#contofpbtnc {
+  margin-top: 700px;
+}
+
+#exit, #settings, #aboutus {    
+  width: 250px;
+  height: 50px;
+  font-size: 30px;
+}
+
+#exit {
+  position: fixed;
+  bottom: 400px;
+  right: 750px;
+}
+
+#aboutus {
+  position: fixed;
+  bottom: 450px;
+  right: 750px;
+}
+
+#settings {
+  position: fixed;
+  bottom: 500px;
+  right: 750px;
+}
+
+#settingsRIL {
+  width: 99%;
+  margin: auto;
+}
+
+.open-button1 {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 80px;
+  right: 1000px;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+}
+
+.open-button2 {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 80px;
+  right: 780px;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+}
+
+.open-button3 {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 80px;
+  right: 560px;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+}
+
+.form-container {
+  width: 500px;
+}
+
+#htppop {
+display: none;
+position: fixed;
+bottom: 150px;
+  right: 220px;
+z-index: 9;
+}
+
+#randrpop {
+  display: none;
+  position: fixed;
+  bottom: 150px;
+  right: 220px;
+  z-index: 9;
+}
+#tntpop {
+  display: none;
+  position: fixed;
+  bottom: 150px;
+  right: 220px;
+  z-index: 9;
+}
+
+#setpop {
+  display: none;
+  position: fixed;
+  top: 400px;
+  left: 1200px;
+  z-index: 9;
+}
+
+#htpcar, #randrcar,#tntcar {
+  width: 700px;
+}
+
+.cancel {
+  font-size: 20px;
+}
+
+#gamediv {
+  width: 90%;
+  margin: auto;
+}
+
+#gamediv h1, #gamediv p  {
+  text-align: center;
+}
+
