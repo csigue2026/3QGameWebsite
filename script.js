@@ -7,7 +7,6 @@ const playBtn = document.getElementById('play');
 const indication = document.getElementById('letternotonce');
 const bodyParts = document.getElementsByClassName('body');
 
-// List of words
 const wordList = [
   'zombie',
   'gossip',
